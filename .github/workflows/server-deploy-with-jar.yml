@@ -40,7 +40,7 @@ jobs:
           host: ${{secrets.EC2_HOST1}}
           username: ubuntu
           #          pemkey를 통해 해당 인스턴스에 접근
-          key: ${{secrets.EC2_PKEMEY}}
+          key: ${{secrets.EC2_PEMKEY}}
           script: |
             if ! type java > /dev/null; then
               sudo apt-get update && sudo apt-get install openjdk-17-jdk -y
